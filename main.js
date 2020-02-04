@@ -6,7 +6,8 @@ function start(){
     bubbles.forEach(bubble=> {
         const x = Math.random()*100;
         const y = Math.random()*100;
-        bubble.style.background = "hsl(" + hue + ", 70%, 70%)"
+        const hue = Math.random()*350;
+        bubble.style.background = "hsl(" + hue + ", 70%, 70%)";
         bubble.style.transform="translate(" + x + "vw, " + y + "vh)";
     })
 }
